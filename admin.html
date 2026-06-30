@@ -73,16 +73,16 @@
             });
         }
 
-        // 🔥 دالة توليد ونسخ الرابط المخصص للزبائن تلقائياً بعد التعديل لـ GitHub Pages
+        // 🔥 دالة توليد ونسخ الرابط المخصص للزبائن (تم التصحيح لتوجه لصفحة العميل index.html)
         function copyBarberLink() {
-            // الرابط المباشر الكامل والمعدل ليتوافق مع مستودع GitHub الخاص بك
+            // الرابط يوجه العميل مباشرة لصفحة التسجيل الأساسية
             let fullLink = `https://menadly55-crypto.github.io/cover-cash-barber/index.html?barber=${currentBarber}`;
             
             // نسخ الرابط للحافظة
             navigator.clipboard.writeText(fullLink).then(() => {
                 let msg = document.getElementById("copyMessage");
                 msg.style.display = "block";
-                setTimeout(() => { msg.style.display = "none"; }, 3000); // إخفاء الرسالة بعد 3 ثواني
+                setTimeout(() => { msg.style.display = "none"; }, 3000); 
             });
         }
 
