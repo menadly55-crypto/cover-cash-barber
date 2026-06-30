@@ -73,10 +73,10 @@
             });
         }
 
-        // 🔥 دالة توليد ونسخ الرابط المخصص للزبائن (تم التصحيح لتوجه لصفحة العميل index.html)
+        // 🔥 دالة توليد ونسخ الرابط المخصص للزبائن (تم التصحيح لتوجه لصفحة دخول العميل login.html)
         function copyBarberLink() {
-            // الرابط يوجه العميل مباشرة لصفحة التسجيل الأساسية
-            let fullLink = `https://menadly55-crypto.github.io/cover-cash-barber/index.html?barber=${currentBarber}`;
+            // الرابط يوجه العميل مباشرة لصفحة التسجيل والدخول الصحيحة
+            let fullLink = `https://menadly55-crypto.github.io/cover-cash-barber/login.html?barber=${currentBarber}`;
             
             // نسخ الرابط للحافظة
             navigator.clipboard.writeText(fullLink).then(() => {
