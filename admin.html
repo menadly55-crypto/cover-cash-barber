@@ -24,7 +24,7 @@
                 </tr>
             </thead>
             <tbody id="clientsTableBody">
-                </tbody>
+            </tbody>
         </table>
 
         <hr class="divider">
@@ -73,11 +73,10 @@
             });
         }
 
-        // 🔥 دالة توليد ونسخ الرابط المخصص للزبائن تلقائياً
+        // 🔥 دالة توليد ونسخ الرابط المخصص للزبائن تلقائياً بعد التعديل لـ GitHub Pages
         function copyBarberLink() {
-            // توليد الرابط بناءً على السيرفر الحالي واسم الحلاق
-            let origin = window.location.origin; 
-            let fullLink = `${origin}/index.html?barber=${currentBarber}`;
+            // الرابط المباشر الكامل والمعدل ليتوافق مع مستودع GitHub الخاص بك
+            let fullLink = `https://menadly55-crypto.github.io/cover-cash-barber/index.html?barber=${currentBarber}`;
             
             // نسخ الرابط للحافظة
             navigator.clipboard.writeText(fullLink).then(() => {
